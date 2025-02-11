@@ -1,0 +1,1 @@
+CREATE SCHEMA api_schema;  -- Replace with your desired schema name

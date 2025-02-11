@@ -1,0 +1,22 @@
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml  # Path to the master changelog file
+    enabled: true
+  application:
+    name: test-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api
+    username: api
+    password: api
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update  # Options: update | create | validate | none
+    show-sql: true
+
+server:
+  port: 8090
+
+
